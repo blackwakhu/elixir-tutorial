@@ -36,3 +36,12 @@ movie = dark <> " " <> knight
 
 IO.puts "the actor who played #{:batman}: #{movie} is #{actor}"
 #  string => String.length(x), String.reverse(x)
+
+var1 = "Hello world"
+var2 = "Hello elixir"
+
+if var1 === var2 do
+    IO.puts "#{var1} and #{var2} are the same"
+else
+    IO.puts "#{var1} and #{var2} are not the same"
+end
