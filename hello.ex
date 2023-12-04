@@ -11,6 +11,7 @@ IO.puts :name
 
 a = ""
 
+# if else length
 if String.length(a) === 0 do
     IO.puts "the length of the string is 0"
 end
@@ -22,6 +23,7 @@ str = "the actor who played #{avenger} on avengers is #{actor}"
 
 IO.puts str
 
+# atom
 :batman
 
 actor = "christian bale"
@@ -29,6 +31,8 @@ actor = "christian bale"
 dark = "dark"
 knight = "knight"
 
+# concatenation
 movie = dark <> " " <> knight
 
 IO.puts "the actor who played #{:batman}: #{movie} is #{actor}"
+#  string => String.length(x), String.reverse(x)
