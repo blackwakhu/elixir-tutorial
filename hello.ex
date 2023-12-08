@@ -72,6 +72,8 @@ defmodule Math do
    def sum(a, b) do
       a + b
    end
+   def difference(a, b), do: a - b 
 end
 
 IO.puts(Math.sum(5, 6))
+IO.puts(Math.difference(6, 5))
