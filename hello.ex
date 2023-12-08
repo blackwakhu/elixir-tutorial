@@ -77,3 +77,20 @@ end
 
 IO.puts(Math.sum(5, 6))
 IO.puts(Math.difference(6, 5))
+
+# private functions 
+
+defmodule Greeting do 
+  def hello(name), do: phrase() <> name 
+  def helloc(name, country \\ "es") do 
+    phrasec(country) <> name
+  end 
+  defp phrase(), do: "hello "
+  defp phrasec("es"), do: "hello, "
+  defp phrasec("en"), do: "holla, "
+end
+
+IO.puts Greeting.hello("betty white")
+IO.puts Greeting.helloc("rowan atkinson", "en")
+IO.puts Greeting.helloc("james cameroon")
+IO.puts Greeting.helloc("antonio banderas", "en")
