@@ -45,3 +45,12 @@ if var1 === var2 do
 else
     IO.puts "#{var1} and #{var2} are not the same"
 end
+
+# the sum function
+
+a1 = 1 
+b1 = 2 
+
+sum = fn(a,b) -> a + b end 
+
+IO.puts "#{a1} + #{b1} = #{sum.(a1, b1)}"
