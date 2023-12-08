@@ -103,3 +103,15 @@ IO.puts Greeting.helloc("rowan atkinson", "en")
 IO.puts Greeting.helloc("james cameroon")
 IO.puts Greeting.helloc("antonio banderas", "en")
 IO.puts Math.fact(1, 5)
+
+a = ["Hey", 100, 452, :true, "People"]
+defmodule ListPrint do
+   def print([]) do
+   end
+   def print([head | tail]) do 
+      IO.puts(head)
+      print(tail)
+   end
+end
+
+ListPrint.print(a)
