@@ -67,3 +67,11 @@ end
 
 handleresult.({"hello me"})
 handleresult.({"snl", "nbc"})
+
+defmodule Math do
+   def sum(a, b) do
+      a + b
+   end
+end
+
+IO.puts(Math.sum(5, 6))
