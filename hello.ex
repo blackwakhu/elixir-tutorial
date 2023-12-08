@@ -72,6 +72,14 @@ defmodule Math do
    def sum(a, b) do
       a + b
    end
+   def fact(a, b) do 
+    if (b === 1) do
+      a
+    else
+      new_res = a * b 
+      fact(new_res, b - 1)
+    end
+   end 
    def difference(a, b), do: a - b 
 end
 
@@ -94,3 +102,4 @@ IO.puts Greeting.hello("betty white")
 IO.puts Greeting.helloc("rowan atkinson", "en")
 IO.puts Greeting.helloc("james cameroon")
 IO.puts Greeting.helloc("antonio banderas", "en")
+IO.puts Math.fact(1, 5)
