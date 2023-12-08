@@ -46,7 +46,7 @@ else
     IO.puts "#{var1} and #{var2} are not the same"
 end
 
-# the sum function
+# functions
 
 a1 = 1 
 b1 = 2 
@@ -54,3 +54,16 @@ b1 = 2
 sum = fn(a,b) -> a + b end 
 
 IO.puts "#{a1} + #{b1} = #{sum.(a1, b1)}"
+
+
+difference = &(&1 - &2)
+
+IO.puts "#{b1} + #{a1} = #{difference.(b1, a1)}"
+
+handleresult = fn
+  {var1} -> IO.puts "#{var1} is in the tuple"
+  {var_1, var_2} -> IO.puts "#{var_1} and #{var_2} are both in the tuple"
+end
+
+handleresult.({"hello me"})
+handleresult.({"snl", "nbc"})
